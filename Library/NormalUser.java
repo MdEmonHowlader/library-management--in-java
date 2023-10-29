@@ -1,4 +1,4 @@
-package users;
+package Library;
 
 public class NormalUser extends User{
     public NormalUser(String name){

@@ -1,4 +1,4 @@
-package users;
+package Library;
 
 class User {
 protected String name;
