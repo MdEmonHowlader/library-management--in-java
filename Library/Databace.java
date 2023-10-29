@@ -7,6 +7,15 @@ public class Databace {
         users.add(e);
         username.add(e.getName());
     }
-    
+    public int  login(String phoneNumber, String email){
+        int n=-1;
+        for(User u : users){
+            if (u.getPhoneNumber().matches(phoneNumber) && u.getEmail().matches(email)){
+                n=users.indexOf(u);
+                break;
+            }
+        }
+        return n;
+    }
 
 }
