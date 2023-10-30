@@ -38,7 +38,7 @@ public class Main {
         }else{
            System.out.println("User doesn't exist!");
         }
-
+    
     }
     private static void NewUser(){
         System.out.println("Enter Name:");
@@ -57,7 +57,7 @@ public class Main {
             User user= new NormalUser(name, phoneNumber, email);
             databace.AddUser(user);
         }
-        u
+        user.manu();
 
     }
     
