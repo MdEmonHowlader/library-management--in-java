@@ -33,8 +33,8 @@ public class Main {
         String email=es.next();
         int n=databace.login(phoneNumber, email);
         if(n !=-1){
-            User user=databace.getUser();
-            System.out.println("Welcome "+ user.getName());
+            User user=databace.getUser(n);
+            user.manu();
         }else{
            System.out.println("User doesn't exist!");
         }
@@ -49,14 +49,15 @@ public class Main {
         String email=es.next();
         System.out.println("1.Admin\n2.Normal User");
         int n2=es.nextInt();
-
+        User user;
         if(n2==1){
-            User admin= new Admin(name, phoneNumber, email);
-            databace.AddUser(admin);
+            user= new Admin(name, phoneNumber, email);
+            
         }else{
-            User user= new NormalUser(name, phoneNumber, email);
-            databace.AddUser(user);
+             user= new NormalUser(name, phoneNumber, email);
+            
         }
+        databace.AddUser(user);
         user.manu();
 
     }
