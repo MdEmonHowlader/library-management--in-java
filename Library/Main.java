@@ -4,7 +4,7 @@ import java.util.*;
 public class Main {
     static Scanner es;
      static Databace databace;
-    public static void main(String[] args) {
+    public static void main(String[] args){
       databace =new Databace();
         int num;
        do{

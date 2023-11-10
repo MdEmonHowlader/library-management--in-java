@@ -8,8 +8,6 @@ protected String phoneNumber;
 public User(){
 
 }
-
-
 public User(String name){
     this.name=name;
 }
