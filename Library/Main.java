@@ -10,8 +10,7 @@ public class Main {
        do{
         System.out.println("\n\n\t\t|-------------------------------------------------------|");
         System.out.println("\t\t\t| Welcome to Library Management System: |");
-        System.out.println("\t\t\t|---------------Hi Emon-----------------|\n");
-               
+        System.out.println("\t\t\t|---------------------------------------|\n");      
         System.out.println("\t\t\t0. Exit\n"+ "\t\t\t1. Login\n\t\t\t2.New User");
         System.out.println("\t\t|-------------------------------------------------------|");
         es=new Scanner(System.in);

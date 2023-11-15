@@ -1,11 +1,17 @@
 package Library;
 
+// import AddBooks;
+// import IOOperation;
+
 public class Admin extends User{
     public Admin(String name){
         super(name);
     }
     public Admin(String name, String email, String phoneNumber){
         super( name , email, phoneNumber);
+        this.operation=new IOOperation[]{
+            new AddBooks()
+        };
     }
     @Override
     public void manu(){
