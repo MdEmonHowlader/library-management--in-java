@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args){
       databace =new Databace();
         int num;
-       do{
+    //    do{
         System.out.println("\n\n\t\t|-------------------------------------------------------|");
         System.out.println("\t\t\t| Welcome to Library Management System: |");
         System.out.println("\t\t\t|---------------------------------------|\n");      
@@ -23,7 +23,7 @@ public class Main {
         
             default: System.out.println("Error!");
              }
-        } while (num !=0); 
+        // } while (num !=0); 
     }
     private static void Login(){
         System.out.println("Enter phone number:");

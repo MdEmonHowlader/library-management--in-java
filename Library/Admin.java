@@ -1,16 +1,35 @@
 package Library;
 
+import java.util.Scanner;
+
 // import AddBooks;
 // import IOOperation;
 
 public class Admin extends User{
     public Admin(String name){
         super(name);
+        this.operation=new IOOperation[]{
+             new ViewBooks(),
+            new AddBooks(),
+            new DeleteBook(),
+            new SearchBook(),
+            new ViewOrders(),
+            new DeletaAllDate(), 
+            new Exit()
+
+        };
     }
     public Admin(String name, String email, String phoneNumber){
         super( name , email, phoneNumber);
-        this.operation=new IOOperation[]{
-            new AddBooks()
+       this.operation=new IOOperation[]{
+             new ViewBooks(),
+            new AddBooks(),
+            new DeleteBook(),
+            new SearchBook(),
+            new ViewOrders(),
+            new DeletaAllDate(), 
+            new Exit()
+
         };
     }
     @Override
@@ -22,6 +41,11 @@ public class Admin extends User{
         System.out.println("5. Delete all date");
         System.out.println("6. View Orders");
         System.out.println("7. Exit");
+
+        Scanner s= new Scanner(System.in);
+
+        int n=s.nextInt();
+        this.operation[n-1].oper();
 
     }
     
