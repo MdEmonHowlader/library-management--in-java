@@ -33,7 +33,7 @@ public class Admin extends User{
         };
     }
     @Override
-    public void manu(){
+    public void manu(Databace databace, User user){
         System.out.println("1. View Books");
         System.out.println("2. Add Book");
         System.out.println("3. Delete Book");
@@ -45,7 +45,7 @@ public class Admin extends User{
         Scanner s= new Scanner(System.in);
 
         int n=s.nextInt();
-        this.operation[n-1].oper();
+        this.operation[n-1].oper(databace, user);
 
     }
     

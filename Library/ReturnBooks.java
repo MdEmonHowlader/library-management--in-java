@@ -1,8 +1,8 @@
 package Library;
 
-public class BorrowBooks implements IOOperation{
+public class ReturnBooks implements IOOperation {
     @Override
     public void oper(Databace databace, User user){
-        
+
     }
 }

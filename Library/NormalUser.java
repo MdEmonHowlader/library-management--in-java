@@ -4,11 +4,28 @@ public class NormalUser extends User{
     public NormalUser(String name){
         super(name);
         this.operation=new IOOperation[]{
+            new ViewBooks(),
+            new SearchBook(),
+            new PlaceOrder(),
+            new BorrowBooks(),
+            new CalculateFine(),
+            new ReturnBooks(),
+            new Exit()
 
         };
     }
     public NormalUser(String name, String email, String phoneNumber){
         super( name , email, phoneNumber);
+        this.operation=new IOOperation[]{
+            new ViewBooks(),
+            new SearchBook(),
+            new PlaceOrder(),
+            new BorrowBooks(),
+            new CalculateFine(),
+            new ReturnBooks(),
+            new Exit()
+
+        };
     }
     public void manu(){
         System.out.println("1. View Books");
