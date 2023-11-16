@@ -27,7 +27,7 @@ public class NormalUser extends User{
 
         };
     }
-    public void manu(){
+    public void manu(Databace databace, User user){
         System.out.println("1. View Books");
         System.out.println("2. Search");
         System.out.println("3. Place order");

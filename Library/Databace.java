@@ -8,8 +8,8 @@ public class Databace {
    private ArrayList<Book> books= new ArrayList<Book>();
    private ArrayList<String> bookname= new ArrayList<String>();
 
-   private File userfile =new File(Main.class.getClassLoader().getResource("\\Users").getFile());
-    private File booksfile =new File(Main.class.getClassLoader().getResource("\\Books").getFile());
+   private File userfile =new File(Main.class.getClassLoader().getResource("Users").getFile());
+   private File booksfile =new File(Main.class.getClassLoader().getResource("Books").getFile());
 
     public Databace(){
         if(!userfile.exists()){
@@ -46,3 +46,4 @@ public class Databace {
 
 }
  
+
