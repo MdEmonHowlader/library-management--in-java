@@ -1,5 +1,5 @@
 package Library;
-
+import java.util.*;
 public class NormalUser extends User{
     public NormalUser(String name){
         super(name);
@@ -35,6 +35,11 @@ public class NormalUser extends User{
         System.out.println("5. Calculate Fine");
         System.out.println("6. Return Book");
         System.out.println("7. Exit");
+
+        Scanner s= new Scanner(System.in);
+        int n=s.nextInt();
+        this.operation[n-1].oper(databace, user);
+        s.close();
         
     }
 }

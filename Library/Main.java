@@ -33,7 +33,7 @@ public class Main {
         int n=databace.login(phoneNumber, email);
         if(n !=-1){
             User user=databace.getUser(n);
-            user.manu();
+            user.manu(databace, user);
         }else{
            System.out.println("User doesn't exist!");
         }
@@ -57,7 +57,7 @@ public class Main {
             
         }
         databace.AddUser(user);
-        user.manu();
+        user.manu(databace, user);
 
     }
     

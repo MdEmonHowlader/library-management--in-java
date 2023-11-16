@@ -43,9 +43,9 @@ public class Admin extends User{
         System.out.println("7. Exit");
 
         Scanner s= new Scanner(System.in);
-
         int n=s.nextInt();
         this.operation[n-1].oper(databace, user);
+        s.close();
 
     }
     
