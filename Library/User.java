@@ -31,6 +31,7 @@ public String getPhoneNumber(){
     return phoneNumber;
 }
 
+abstract public String toString();
 abstract public void manu(Databace databace, User user);
 
 }

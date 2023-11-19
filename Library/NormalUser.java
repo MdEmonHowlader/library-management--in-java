@@ -1,5 +1,5 @@
 package Library;
-import java.util.*;
+ import java.util.*;
 public class NormalUser extends User{
     public NormalUser(String name){
         super(name);
@@ -42,4 +42,23 @@ public class NormalUser extends User{
         s.close();
         
     }
+
+    // @Override
+	// public void manu(Databace databace, User user) {
+		
+	// 	String[] data = new String[7];
+	// 	data[0] = "View Books";
+	// 	data[1] = "Search";
+	// 	data[2] = "Place Order";
+	// 	data[3] = "Borrow Book";
+	// 	data[4] = "Calculate Fine";
+	// 	data[5] = "Return Book";
+	// 	data[6] = "Exit";
+		
+	// 	// JFrame frame = this.frame(data, databace, user);
+	// 	// frame.setVisible(true);
+	// }
+    public String toString() {
+		return name+"<N/>"+email+"<N/>"+phoneNumber+"<N/>"+"Normal";
+	}
 }

@@ -24,7 +24,7 @@ public class Book {
         this.price=price;
         this.brwcopies=brwcopies;
     }
-
+    @Override
     public String toString(){
        String text="Book name: "+ name+
        "Book Author: "+ author+

@@ -1,9 +1,6 @@
 package Library;
 
-import java.util.Scanner;
-
-// import AddBooks;
-// import IOOperation;
+ import java.util.Scanner;
 
 public class Admin extends User{
     public Admin(String name){
@@ -46,7 +43,27 @@ public class Admin extends User{
         int n=s.nextInt();
         this.operation[n-1].oper(databace, user);
         s.close();
-
     }
-    
+
+    	
+	// @Override
+	// public void manu(Databace databace, User user){
+	// 	String[] data = new String[7];
+	// 	data[0] = "View Books";
+	// 	data[1] = "Add Book";
+	// 	data[2] = "Delete Book";
+	// 	data[3] = "Search";
+	// 	data[4] = "Delete all data";
+	// 	data[5] = "View Orders";
+	// 	data[6] = "Exit";
+		
+	// 	// JFrame frame = this.frame(data, database, user);
+	// 	// frame.setVisible(true);
+	// }
+	
+    public String toString() {
+		return name+"<N/>"+email+"<N/>"+phoneNumber+"<N/>"+"Admin";
+	}
+
+
 }
